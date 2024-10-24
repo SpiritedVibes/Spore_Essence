@@ -313,7 +313,7 @@ const main = async () => {
                 note: `Feel free to customize this smoothie by adding spinach or protein powder for an extra nutritional boost. This recipe is also delicious when served with a handful of ice for a refreshing chilled treat.`
             },
             {
-                image: "../Turkey Tail Immune-Boosting Soup",
+                image: "../assets/turkey tail soup.jpg",
                 name: "Turkey Tail Immune-Boosting Soup",
                 difficulty: "Medium",
                 prep_time: 5, // minutes

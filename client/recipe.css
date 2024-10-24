@@ -1,5 +1,5 @@
 #nav-belt {
-    background-color: #cad8a3;
+    background-color:darkslategrey;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,16 +22,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
+  background-color: darkolivegreen;
 }
 
 
 h1 {
-  font-size: 40px;
+  
   text-align: center;
+  font-family: cursive;
 }
 
 h2 {
   text-align:center;
+  font-size: 40px;
+  font-family: cursive;
 }
 
 #user-profile {
@@ -57,30 +61,141 @@ main {
   align-items: center;
 }
 
+#logo img{
+  width: 150px;
+  height: auto;
+  position: relative;
+
+}
+
 .recipe-card {
-  border: 1px solid whitesmoke;
+  border: 1px solid whitesmoke; /*I this it makes it pop a little*/
   padding: 16px;
   margin: 16px;
   border-radius: 8px;
-  width: 300px;
   box-shadow: 0 4px 6px black;
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .recipe-card img {
-  width: 100%;
+  width: 500px;
   height: auto;
   border-radius: 8px;
 }
 
 .recipe-card h2 {
-  font-size: 24px;
+  font-size: 40px;
   margin-top: 8px;
+  font-family: cursive;
+  padding: 120px;
 }
 
 .recipe-card p {
-  font-size: 16px;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.recipe-card ul, .recipe-card ol {
+.recipe-card ul, .recipe-card ol, .recipe-card li{
   margin-top: 10px;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* mobile */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .recipe-card {
+    grid-template-columns: 1fr; 
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .recipe-card img {
+    width: 100%; 
+    height: auto;
+  }
+
+  .recipe-card h2 {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  .recipe-card p, .recipe-card ul, .recipe-card ol, .recipe-card li {
+    font-size: 18px;
+  }
+
+  h1, h2 {
+    font-size: 32px;
+  }
+
+  footer {
+    padding: 2em;
+  }
+}
+
+/*tablets*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .recipe-card {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for medium screens */
+    padding: 12px;
+    margin: 12px;
+  }
+
+  .recipe-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recipe-card h2 {
+    font-size: 30px;
+    padding: 80px;
+  }
+
+  .recipe-card p, .recipe-card ul, .recipe-card ol, .recipe-card li {
+    font-size: 22px;
+  }
+
+  h1, h2 {
+    font-size: 36px;
+  }
+
+  footer {
+    padding: 3em;
+  }
+}
+
+/* desktops*/
+@media screen and (min-width: 1025px) {
+  .recipe-card {
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    padding: 16px;
+    margin: 16px;
+  }
+
+  .recipe-card img {
+    width: 500px;
+    height: auto;
+  }
+
+  .recipe-card h2 {
+    font-size: 40px;
+    padding: 120px;
+  }
+
+  .recipe-card p, .recipe-card ul, .recipe-card ol, .recipe-card li {
+    font-size: 30px;
+  }
+
+  h1, h2 {
+    font-size: 40px;
+  }
+
+  footer {
+    padding: 4em;
+  }
 }
