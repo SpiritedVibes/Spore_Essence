@@ -423,11 +423,18 @@ card-button:hover {
   .container {
     margin-inline: 1.5rem;
     padding-block: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .card-container {
-    grid-template-columns: 1fr 1fr 1fr; /* Three-column layout */
-    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    width: 100%;
   }
 
   .card-img {
@@ -468,9 +475,5 @@ card-button:hover {
   .learning-imgs img {
     width:1200px;
     
-  }
-
-  main {
-   
   }
 }
