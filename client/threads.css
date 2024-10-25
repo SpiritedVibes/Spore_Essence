@@ -1,0 +1,132 @@
+#nav-belt {
+    background-color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+
+  #logo img{
+    width: 150px;
+    height: auto;
+    position: relative;
+  }
+
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+#login-form {
+  max-width: 200px;
+  height: 220px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login-form input {
+  width: 180px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#login-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: #4cae4c;
+}
+
+.profile-container {
+  display:none;
+}
+
+
+#user-profile {
+  max-width: 400px;
+  margin: 50px auto; 
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+
+}
+
+
+.profile-text, .profile-input {
+  margin-bottom: 15px; 
+}
+
+.profile-text {
+  font-size: 16px; 
+  color: #333;
+}
+
+.profile-input {
+  display: none; 
+}
+
+
+input[type="text"], input[type="email"], input[type="phone"] {
+  width: 100%;
+  padding: 10px; 
+  border: 1px solid whitesmoke; 
+  border-radius: 4px; 
+  font-size: 16px; 
+  box-sizing: border-box;
+}
+
+
+#login-message {
+  text-align: center;
+  margin-top: 15px;
+  color: red; 
+}
+
+
+#myAccount-btn {
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color:green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#myAccount-btn:hover {
+  background-color: #0056b3;
+}
+
+  #nav-main {
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+  }

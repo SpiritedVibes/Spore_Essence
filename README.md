@@ -6,3 +6,7 @@ CSS
 Express
 Mongoose
 Cors
+  <div id="diagram">
+                <img src="../assets/Spore Essence Diagram.jpg"
+                    alt="Diagram">
+            </div>
